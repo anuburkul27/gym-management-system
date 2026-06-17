@@ -1,0 +1,237 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="dashboard-container">
+
+    <!-- Welcome Section -->
+
+    <div class="welcome-section text-center">
+
+        <h1>🏋️ Welcome to Gym Management System</h1>
+
+        <p>
+            Manage Members, Trainers, Payments & Attendance Easily 💪
+        </p>
+
+    </div>
+
+    <!-- Dashboard Cards -->
+
+    <div class="row mt-5">
+
+        <!-- Members -->
+
+        <div class="col-md-3 mb-4">
+
+            <div class="dashboard-card members-card">
+
+                <h2>👨‍💼 Members</h2>
+
+                <h3>150</h3>
+
+                <p>Total Active Members</p>
+
+                <a asp-controller="Members"
+                   asp-action="Index"
+                   class="btn btn-light mt-3 w-100">
+
+                    Manage Members
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Trainers -->
+
+        <div class="col-md-3 mb-4">
+
+            <div class="dashboard-card trainers-card">
+
+                <h2>🏆 Trainers</h2>
+
+                <h3>12</h3>
+
+                <p>Professional Trainers</p>
+
+                <a asp-controller="Trainers"
+                   asp-action="Index"
+                   class="btn btn-light mt-3 w-100">
+
+                    Manage Trainers
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Attendance -->
+
+        <div class="col-md-3 mb-4">
+
+            <div class="dashboard-card attendance-card">
+
+                <h2>📅 Attendance</h2>
+
+                <h3>95%</h3>
+
+                <p>Daily Attendance Rate</p>
+
+                <a asp-controller="Attendance"
+                   asp-action="Index"
+                   class="btn btn-light mt-3 w-100">
+
+                    Manage Attendance
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Payments -->
+
+        <div class="col-md-3 mb-4">
+
+            <div class="dashboard-card payment-card">
+
+                <h2>💰 Payments</h2>
+
+                <h3>₹75,000</h3>
+
+                <p>Monthly Revenue</p>
+
+                <a asp-controller="Payments"
+                   asp-action="Index"
+                   class="btn btn-light mt-3 w-100">
+
+                    Manage Payments
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+   
+
+    <!-- Info Section -->
+
+    <div class="row mt-4">
+
+        <div class="col-md-6 mb-4">
+
+            <div class="info-box">
+
+                <h3>🔥 Today’s Motivation</h3>
+
+                <p>
+                    “Push yourself because no one else is going to do it for you.”
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6 mb-4">
+
+            <div class="info-box">
+
+                <h3>📢 Gym Notice</h3>
+
+                <p>
+                    New Zumba Batch Starts From Monday at 7 AM 💃
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<style>
+
+    .dashboard-container {
+        padding: 20px;
+    }
+
+    .welcome-section {
+        background: linear-gradient(to right, #2563eb, #1e40af);
+        color: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    }
+
+        .welcome-section h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .welcome-section p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+    .dashboard-card {
+        color: white;
+        padding: 25px;
+        border-radius: 15px;
+        text-align: center;
+        transition: transform 0.3s ease;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+
+        .dashboard-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .dashboard-card h2 {
+            font-size: 28px;
+        }
+
+        .dashboard-card h3 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+    .members-card {
+        background: linear-gradient(to right, #10b981, #059669);
+    }
+
+    .trainers-card {
+        background: linear-gradient(to right, #f59e0b, #d97706);
+    }
+
+    .attendance-card {
+        background: linear-gradient(to right, #ef4444, #dc2626);
+    }
+
+    .payment-card {
+        background: linear-gradient(to right, #8b5cf6, #7c3aed);
+    }
+
+    .info-box {
+        background-color: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+        .info-box h3 {
+            color: #1e3a8a;
+        }
+
+        .info-box p {
+            font-size: 17px;
+            color: #374151;
+        }
+
+</style>

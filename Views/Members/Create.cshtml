@@ -1,0 +1,35 @@
+﻿@model GymManagementSystem.Models.Member
+
+<h2>Add Member</h2>
+
+<form asp-action="Create">
+
+    <div>
+        <label>ID</label>
+        <input asp-for="Id" class="form-control" />
+    </div>
+
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div>
+        <label>Phone</label>
+        <input asp-for="Phone" class="form-control" />
+    </div>
+
+    <div>
+        <label>Membership Type</label>
+        <input asp-for="MembershipType"
+               class="form-control" />
+    </div>
+
+    <br />
+
+    <button type="submit"
+            class="btn btn-success">
+        Save
+    </button>
+
+</form>

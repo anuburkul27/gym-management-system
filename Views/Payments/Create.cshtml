@@ -1,0 +1,26 @@
+﻿@model GymManagementSystem.Models.Payment
+
+<h1>Add Payment</h1>
+
+<form asp-action="Create">
+
+    <div class="mb-3">
+        <label>Member Name</label>
+        <input asp-for="MemberName" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Amount</label>
+        <input asp-for="Amount" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Payment Date</label>
+        <input asp-for="PaymentDate" type="date" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Save
+    </button>
+
+</form>

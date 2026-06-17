@@ -1,0 +1,78 @@
+﻿@model IEnumerable<GymManagementSystem.Models.Attendance>
+
+<h1>Attendance Management</h1>
+
+<a asp-action="Create" class="btn btn-primary mb-3">
+    Add Member
+</a>
+
+<table class="table table-bordered">
+
+    <thead class="table-dark">
+
+        <tr>
+            <th>Member Name</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>@item.MemberName</td>
+
+                <td>@item.Date.ToString("dd-MM-yyyy")</td>
+
+                <td>
+
+                    @if (item.Status == 1)
+                    {
+                        <span class="text-success">
+                            Present
+                        </span>
+                    }
+
+                    else if (item.Status == 0)
+                    {
+                        <span class="text-danger">
+                            Absent
+                        </span>
+                    }
+
+                    else
+                    {
+                        <span>
+                            Not Marked
+                        </span>
+                    }
+
+                </td>
+
+                <td>
+
+                    <a asp-action="MarkPresent"
+                       asp-route-id="@item.Id"
+                       class="btn btn-success">
+                        Present
+                    </a>
+
+                    <a asp-action="MarkAbsent"
+                       asp-route-id="@item.Id"
+                       class="btn btn-danger">
+                        Absent
+                    </a>
+
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>

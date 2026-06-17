@@ -1,0 +1,17 @@
+﻿@model GymManagementSystem.Models.Attendance
+
+<h2>Add Attendance Member</h2>
+
+<form asp-action="Create">
+
+    <div class="mb-3">
+        <label>Member Name</label>
+
+        <input asp-for="MemberName" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Add Member
+    </button>
+
+</form>

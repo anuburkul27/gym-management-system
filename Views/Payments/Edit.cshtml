@@ -1,0 +1,38 @@
+﻿@model GymManagementSystem.Models.Payment
+
+<h2>Edit Payment</h2>
+
+<form asp-action="Edit" method="post">
+
+    <input asp-for="Id" type="hidden" />
+
+    <!-- Keep original Payment Date -->
+    <input asp-for="PaymentDate" type="hidden" />
+
+    <div class="mb-3">
+        <label class="form-label">Member Name</label>
+        <input asp-for="MemberName" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Amount</label>
+        <input asp-for="Amount" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Payment Date</label>
+        <input asp-for="PaymentDate"
+               class="form-control"
+               readonly />
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Update Payment
+    </button>
+
+    <a asp-action="Index"
+       class="btn btn-secondary">
+        Back
+    </a>
+
+</form>
