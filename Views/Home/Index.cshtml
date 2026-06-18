@@ -118,6 +118,33 @@
 
     </div>
 
+    <!-- BMI -->
+
+    <div class="dashboard-card bmi-card">
+        <h2>⚖️ BMI Calculator</h2>
+        <h3>Check BMI</h3>
+        <p>Height, Weight & Health Status</p>
+
+        <a asp-controller="BMI"
+           asp-action="Index"
+           class="btn btn-light mt-3 w-100">
+            Calculate BMI
+        </a>
+    </div>
+
+    <!-- Workout & Diet -->
+    <div class="dashboard-card workout-card">
+        <h2>🏋️ Workout Plan</h2>
+        <h3>Fitness Guide</h3>
+        <p>Diet & Exercise Recommendation</p>
+
+        <a asp-controller="BMI"
+           asp-action="Index"
+           class="btn btn-light mt-3 w-100">
+            View Plan
+        </a>
+    </div>
+
    
 
     <!-- Info Section -->
@@ -216,6 +243,21 @@
 
     .payment-card {
         background: linear-gradient(to right, #8b5cf6, #7c3aed);
+    }
+    /* BMI Card */
+
+    .bmi-card {
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        color: white;
+        box-shadow: 0px 8px 20px rgba(59,130,246,0.4);
+    }
+
+    /* Workout Card */
+
+    .workout-card {
+        background: linear-gradient(135deg, #f97316, #ea580c);
+        color: white;
+        box-shadow: 0px 8px 20px rgba(249,115,22,0.4);
     }
 
     .info-box {

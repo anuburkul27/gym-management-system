@@ -1,0 +1,59 @@
+﻿@model GymManagementSystem.Models.BMI
+
+<h2>BMI Calculator With Workout & Diet Plan</h2>
+
+<form method="post">
+
+    <div class="mb-3">
+        <label>Member Name</label>
+        <input asp-for="MemberName" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Height (Meter)</label>
+        <input asp-for="Height" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Weight (Kg)</label>
+        <input asp-for="Weight" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Calculate BMI
+    </button>
+
+</form>
+
+@if (Model != null && Model.BMIValue > 0)
+{
+    <div class="card mt-4">
+        <div class="card-body">
+
+            <h4>Member Name : @Model.MemberName</h4>
+
+            <h4>
+                BMI :
+                @Model.BMIValue.ToString("0.00")
+            </h4>
+
+            <h4>
+                Category :
+                @Model.Category
+            </h4>
+
+            <hr />
+
+            <h4>🏋️ Workout Plan</h4>
+
+            <p>@Model.WorkoutPlan</p>
+
+            <hr />
+
+            <h4>🥗 Diet Plan</h4>
+
+            <p>@Model.DietPlan</p>
+
+        </div>
+    </div>
+}

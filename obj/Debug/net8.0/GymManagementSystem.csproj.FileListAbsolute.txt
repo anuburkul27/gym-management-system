@@ -136,6 +136,7 @@ C:\Users\anagh\source\repos\GymManagementSystem\GymManagementSystem\obj\Debug\ne
 C:\Users\anagh\source\repos\GymManagementSystem\GymManagementSystem\obj\Debug\net8.0\GymManagementSystem.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\anagh\source\repos\GymManagementSystem\GymManagementSystem\obj\Debug\net8.0\GymManagementSystem.RazorAssemblyInfo.cache
 C:\Users\anagh\source\repos\GymManagementSystem\GymManagementSystem\obj\Debug\net8.0\GymManagementSystem.RazorAssemblyInfo.cs
+C:\Users\anagh\source\repos\GymManagementSystem\GymManagementSystem\obj\Debug\net8.0\GymManagementSystem.sourcelink.json
 C:\Users\anagh\source\repos\GymManagementSystem\GymManagementSystem\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\anagh\source\repos\GymManagementSystem\GymManagementSystem\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\anagh\source\repos\GymManagementSystem\GymManagementSystem\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
