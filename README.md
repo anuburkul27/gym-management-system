@@ -1,16 +1,17 @@
-# 🌍 Travel Tourism Management System
+# 🏋️ Gym Management System
 
-A web-based **Travel Tourism Management System** developed using **ASP.NET Core MVC** and **SQL Server**. The application allows users to browse travel packages, book hotels, make payments, and manage bookings through a simple and responsive interface.
+A web-based **Gym Management System** developed using **ASP.NET Core MVC** and **SQL Server**. This application helps manage gym members, trainers, attendance, payments, BMI records, and workout plans through a user-friendly interface.
 
 ## 🚀 Features
 
-* User Registration & Login
-* Travel Package Management
-* Hotel Management
-* Online Booking
+* Member Management
+* Trainer Management
+* Attendance Tracking
 * Payment Management
-* Booking History
-* Responsive UI
+* BMI Calculator
+* Workout Plan Management
+* Dashboard with Reports
+* Search & CRUD Operations
 
 ## 🛠️ Tech Stack
 
@@ -23,18 +24,19 @@ A web-based **Travel Tourism Management System** developed using **ASP.NET Core 
 
 1. Clone the repository.
 2. Open the project in Visual Studio.
-3. Update the SQL Server connection string in `appsettings.json`.
+3. Configure the SQL Server connection string in `appsettings.json`.
 4. Run the database migrations (if required).
-5. Press **F5** to launch the application.
+5. Press **F5** to start the application.
 
-## 📷 Output
+## 📷 Modules
 
-* Home Page
-* Travel Packages
-* Hotel Listings
-* Booking Page
-* Payment Page
-* Admin Dashboard
+* Dashboard
+* Members
+* Trainers
+* Attendance
+* Payments
+* BMI Calculator
+* Workout Plans
 
 ## 👩‍💻 Author
 
